@@ -1,5 +1,16 @@
 # WebLogic to Helidon Migration Learning Project
 
+## 🚀 Getting Started
+
+**New here?** Start with → **[docs/HOW_TO_USE.md](docs/HOW_TO_USE.md)**
+
+This guide will walk you through:
+- How to navigate this project
+- Daily development workflow
+- Git branching strategy for learning
+- How to track your progress
+- Documentation maintenance
+
 ## Project Overview
 This project is a hands-on learning journey to understand:
 - **Java Helidon framework** (SE → MP progression)
@@ -72,7 +83,10 @@ curl http://localhost:8080/echo/test
 - **Podman** (container runtime)
 
 ## Documentation
+- **[How to Use This Project](docs/HOW_TO_USE.md)** - **START HERE** for workflow and best practices
 - [Learning Plan](docs/PLAN.md) - Complete learning roadmap
 - [Progress Log](docs/PROGRESS.md) - Detailed progress notes
 - [Technical Notes](docs/NOTES.md) - Technical insights and troubleshooting
 - [Learning Goals](docs/GOALS.md) - Current state and objectives
+- [Git Strategy](docs/BRANCHING.md) - Branch workflow details
+- [Quick Reference](QUICKREF.md) - Essential commands

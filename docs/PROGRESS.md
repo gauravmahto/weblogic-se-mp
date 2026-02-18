@@ -71,7 +71,21 @@
 - `app/build.gradle` - Added fat JAR configuration
 
 ### Files Created
-- None (used existing structure)
+- `.gitignore` - Standard Java/Gradle ignores
+- `docs/HOW_TO_USE.md` - Comprehensive usage guide (⭐ IMPORTANT)
+- `docs/BRANCHING.md` - Git workflow strategy
+- `QUICKREF.md` - Quick command reference
+
+### Documentation Structure
+All learning documentation now organized in `docs/` directory:
+- `HOW_TO_USE.md` - Your primary guide for using this project
+- `PLAN.md` - Complete learning roadmap
+- `PROGRESS.md` - This file
+- `GOALS.md` - Current state tracking
+- `NOTES.md` - Technical insights
+- `BRANCHING.md` - Git strategy
+
+**🎯 Mental Note**: Always update `docs/HOW_TO_USE.md` when you discover better workflows or practices. This is your living guide!
 
 ### Next Steps
 - Document learning goals and plan
