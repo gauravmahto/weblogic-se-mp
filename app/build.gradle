@@ -1,0 +1,41 @@
+plugins {
+    id 'application'
+}
+
+group = 'com.acme'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+def helidonVersion = '4.1.5' // stable Helidon 4 line; change only if you decide later
+
+dependencies {
+    implementation platform("io.helidon:helidon-bom:${helidonVersion}")
+
+    implementation "io.helidon.webserver:helidon-webserver"
+    implementation "io.helidon.http:helidon-http"
+
+    testImplementation "org.junit.jupiter:junit-jupiter:5.10.2"
+}
+
+application {
+    // Main class for `gradle run`
+    mainClass = 'com.acme.Main'
+}
+
+// Create a fat JAR with all dependencies
+tasks.jar {
+    manifest {
+        attributes 'Main-Class': 'com.acme.Main'
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+tasks.test {
+    useJUnitPlatform()
+}

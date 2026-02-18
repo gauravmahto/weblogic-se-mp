@@ -1,0 +1,12 @@
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    // Common test config for all subprojects
+    tasks.withType(Test).configureEach {
+        useJUnitPlatform()
+    }
+}
